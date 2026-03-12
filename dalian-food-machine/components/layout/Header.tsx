@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { EXTERNAL_SHOP_URL } from "@/lib/navigation";
 import Navigation from "./Navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
+import ShopDropdown from "./ShopDropdown";
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -35,14 +35,9 @@ export default function Header() {
             <div className="hidden lg:block">
               <LanguageSwitcher />
             </div>
-            <a
-              href={EXTERNAL_SHOP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center px-4 py-2 bg-secondary text-gray-900 text-sm font-medium rounded-md hover:bg-secondary-light transition-colors"
-            >
-              {t("shopButton")}
-            </a>
+            <div className="hidden sm:block">
+              <ShopDropdown />
+            </div>
             <MobileMenu />
           </div>
         </div>

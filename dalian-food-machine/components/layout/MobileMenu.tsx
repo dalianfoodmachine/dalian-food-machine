@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { NAV_ITEMS, EXTERNAL_SHOP_URL } from "@/lib/navigation";
+import { NAV_ITEMS, SHOP_LINKS } from "@/lib/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function MobileMenu() {
@@ -131,14 +131,19 @@ export default function MobileMenu() {
         {/* 底部區塊 */}
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100 space-y-3">
           <LanguageSwitcher />
-          <a
-            href={EXTERNAL_SHOP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full text-center px-4 py-2.5 bg-secondary text-gray-900 font-medium rounded-md hover:bg-secondary-light transition-colors"
-          >
-            {t("shopButton")}
-          </a>
+          <div className="flex flex-col gap-2">
+            {SHOP_LINKS.map((link) => (
+              <a
+                key={link.key}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center px-4 py-2.5 bg-secondary text-gray-900 font-medium rounded-md hover:bg-secondary-light transition-colors"
+              >
+                {t(`shop${link.key[0].toUpperCase()}${link.key.slice(1)}` as "shopCyberbiz" | "shopCoupang")}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </>

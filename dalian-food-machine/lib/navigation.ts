@@ -8,4 +8,10 @@ export const NAV_ITEMS = [
   { key: "contact", href: "/contact" },
 ] as const;
 
-export const EXTERNAL_SHOP_URL = "https://shop.example.com";
+export const SHOP_LINKS = [
+  { key: "cyberbiz", href: "https://www.daliantw.com" },
+  {
+    key: "coupang",
+    href: "https://shop.tw.coupang.com/dalian/33698?platform=p&source=brandstore_sdp_atf&pid=633543818264641&viid=633543818362881&ocid=23828877&checkBatchDelivery=true&brandId=0",
+  },
+] as const;

@@ -6,6 +6,8 @@
   "Header": {
     "companyName": "Dalian Food Machine",
     "shopButton": "Shop",
+    "shopCyberbiz": "CyberBiz Shop",
+    "shopCoupang": "Coupang Shop",
     "menuOpen": "Open menu",
     "menuClose": "Close menu"
   },
