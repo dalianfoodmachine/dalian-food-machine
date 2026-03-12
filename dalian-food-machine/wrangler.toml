@@ -11,3 +11,15 @@ binding = "ASSETS"
 [[services]]
 binding = "WORKER_SELF_REFERENCE"
 service = "dalian-food-machine"
+
+# Preview 環境（dev branch 部署用）
+[env.preview]
+name = "dalian-food-machine-preview"
+
+[env.preview.assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[env.preview.services]]
+binding = "WORKER_SELF_REFERENCE"
+service = "dalian-food-machine-preview"
