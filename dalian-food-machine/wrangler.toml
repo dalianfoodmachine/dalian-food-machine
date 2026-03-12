@@ -7,6 +7,10 @@ compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
+routes = [
+  { pattern = "dalianfoodmachine.com/*", zone_name = "dalianfoodmachine.com" }
+]
+
 # Self-reference for caching (ISR/revalidation)
 [[services]]
 binding = "WORKER_SELF_REFERENCE"
