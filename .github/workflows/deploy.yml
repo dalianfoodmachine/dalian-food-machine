@@ -31,7 +31,9 @@ jobs:
           cache-dependency-path: dalian-food-machine/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: |
+          rm -f ../package.json
+          pnpm install --frozen-lockfile
         working-directory: dalian-food-machine
 
       - name: Build
