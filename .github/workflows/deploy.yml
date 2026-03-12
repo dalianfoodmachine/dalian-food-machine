@@ -27,14 +27,9 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-          cache-dependency-path: |
-            pnpm-lock.yaml
-            dalian-food-machine/pnpm-lock.yaml
+          cache-dependency-path: dalian-food-machine/pnpm-lock.yaml
 
-      - name: Install root dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Install app dependencies
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
         working-directory: dalian-food-machine
 
