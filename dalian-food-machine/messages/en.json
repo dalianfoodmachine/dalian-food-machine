@@ -1,8 +1,37 @@
 {
   "Home": {
-    "title": "To get started, edit the page.tsx file.",
-    "description": "Looking for a starting point or more instructions? Head over to <templates>Templates</templates> or the <learning>Learning</learning> center.",
-    "deploy": "Deploy Now",
-    "docs": "Documentation"
+    "title": "Dalian Food Machine",
+    "subtitle": "Professional Food Machinery Manufacturer"
+  },
+  "Header": {
+    "companyName": "Dalian Food Machine",
+    "shopButton": "Shop",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "maintenance": "Maintenance",
+    "purchasing": "Purchasing",
+    "blog": "News",
+    "videos": "Videos",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "companyName": "Dalian Food Machine Co., Ltd.",
+    "description": "Professional food machinery manufacturer, offering a full range of cutting machines, packaging machines, and bakery equipment.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "address": "Company address (TBD)",
+    "phone": "Phone (TBD)",
+    "email": "Email (TBD)",
+    "copyright": "© {year} Dalian Food Machine Co., Ltd. All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "LanguageSwitcher": {
+    "zh-TW": "中文",
+    "en": "English"
   }
 }

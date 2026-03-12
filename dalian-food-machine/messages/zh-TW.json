@@ -1,8 +1,37 @@
 {
   "Home": {
-    "title": "開始編輯 page.tsx 檔案",
-    "description": "需要起點或更多指引？前往 <templates>範本</templates> 或 <learning>學習</learning> 中心。",
-    "deploy": "立即部署",
-    "docs": "文件"
+    "title": "大連食品機械",
+    "subtitle": "專業食品機械製造商"
+  },
+  "Header": {
+    "companyName": "大連食品機械",
+    "shopButton": "前往商城",
+    "menuOpen": "開啟選單",
+    "menuClose": "關閉選單"
+  },
+  "Navigation": {
+    "home": "首頁",
+    "products": "產品介紹",
+    "about": "公司簡介",
+    "maintenance": "設備維修",
+    "purchasing": "採購方式",
+    "blog": "最新消息",
+    "videos": "影片專區",
+    "contact": "聯絡我們"
+  },
+  "Footer": {
+    "companyName": "大連食品機械股份有限公司",
+    "description": "專業食品機械製造商，提供切割機、包裝機、烘焙設備等全系列產品。",
+    "quickLinks": "快速連結",
+    "contactInfo": "聯絡資訊",
+    "address": "公司地址（待填入）",
+    "phone": "電話（待填入）",
+    "email": "信箱（待填入）",
+    "copyright": "© {year} 大連食品機械股份有限公司 版權所有",
+    "privacy": "隱私權政策"
+  },
+  "LanguageSwitcher": {
+    "zh-TW": "中文",
+    "en": "English"
   }
 }
