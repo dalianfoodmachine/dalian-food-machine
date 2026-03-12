@@ -30,6 +30,11 @@
     "copyright": "© {year} 大連食品機械股份有限公司 版權所有",
     "privacy": "隱私權政策"
   },
+  "NotFound": {
+    "title": "頁面施工中",
+    "description": "此頁面正在建置中，敬請期待！",
+    "backHome": "返回首頁"
+  },
   "LanguageSwitcher": {
     "zh-TW": "中文",
     "en": "English"

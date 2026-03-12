@@ -30,6 +30,11 @@
     "copyright": "© {year} Dalian Food Machine Co., Ltd. All rights reserved.",
     "privacy": "Privacy Policy"
   },
+  "NotFound": {
+    "title": "Under Construction",
+    "description": "This page is currently being built. Stay tuned!",
+    "backHome": "Back to Home"
+  },
   "LanguageSwitcher": {
     "zh-TW": "中文",
     "en": "English"
