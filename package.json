@@ -1,8 +1,5 @@
 {
-	"devDependencies": {
-		"@opennextjs/cloudflare": "^1.17.1"
-	},
-	"dependencies": {
+"dependencies": {
 		"@contentful/rich-text-react-renderer": "^16.1.6",
 		"contentful": "^11.10.5",
 		"lite-youtube-embed": "^0.3.4"
