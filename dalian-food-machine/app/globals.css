@@ -28,7 +28,21 @@
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
 body {
   background: #ffffff;
   color: #263238;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
