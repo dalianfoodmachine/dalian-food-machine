@@ -1,7 +1,26 @@
 {
   "Home": {
     "title": "Dalian Food Machine",
-    "subtitle": "Professional Food Machinery Manufacturer"
+    "subtitle": "Professional Food Machinery Manufacturer",
+    "hero": {
+      "slides": [
+        {
+          "title": "Start Your Business with Ease",
+          "subtitle": "From home kitchens to small workshops, Dalian equipment helps you get started",
+          "cta": "Browse Products"
+        },
+        {
+          "title": "The Perfect Lightweight Equipment",
+          "subtitle": "Compact size, simple operation, stable production",
+          "cta": "Learn More"
+        },
+        {
+          "title": "2023 Taipei Bakery Show",
+          "subtitle": "Experience Dalian Food Machine's automated equipment in person",
+          "cta": "View Exhibition"
+        }
+      ]
+    }
   },
   "Header": {
     "companyName": "Dalian Food Machine",
@@ -17,8 +36,6 @@
     "about": "About",
     "maintenance": "Maintenance",
     "purchasing": "Purchasing",
-    "blog": "News",
-    "videos": "Videos",
     "contact": "Contact"
   },
   "Footer": {

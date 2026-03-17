@@ -1,10 +1,8 @@
 export const NAV_ITEMS = [
-  { key: "products", href: "/products" },
   { key: "about", href: "/about" },
-  { key: "maintenance", href: "/maintenance" },
+  { key: "products", href: "/products" },
   { key: "purchasing", href: "/purchasing" },
-  { key: "blog", href: "/blog" },
-  { key: "videos", href: "/videos" },
+  { key: "maintenance", href: "/maintenance" },
   { key: "contact", href: "/contact" },
 ] as const;
 

@@ -1,7 +1,26 @@
 {
   "Home": {
     "title": "大連食品機械",
-    "subtitle": "專業食品機械製造商"
+    "subtitle": "專業食品機械製造商",
+    "hero": {
+      "slides": [
+        {
+          "title": "輕鬆創業，讓夢想在客廳發芽",
+          "subtitle": "從家庭廚房到小型工坊，大連設備陪你起步",
+          "cta": "瀏覽產品"
+        },
+        {
+          "title": "最適合您的輕量級設備",
+          "subtitle": "體積小、操作簡單、產能穩定",
+          "cta": "了解更多"
+        },
+        {
+          "title": "2023 台北烘焙展",
+          "subtitle": "現場體驗大連食品機械的自動化設備",
+          "cta": "查看展覽"
+        }
+      ]
+    }
   },
   "Header": {
     "companyName": "大連食品機械",
@@ -17,8 +36,6 @@
     "about": "公司簡介",
     "maintenance": "設備維修",
     "purchasing": "採購方式",
-    "blog": "最新消息",
-    "videos": "影片專區",
     "contact": "聯絡我們"
   },
   "Footer": {
