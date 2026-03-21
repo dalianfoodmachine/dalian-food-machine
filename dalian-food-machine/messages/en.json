@@ -2,6 +2,12 @@
   "Home": {
     "title": "Dalian Food Machine",
     "subtitle": "Professional Food Machinery Manufacturer",
+    "promoVideo": {
+      "badge": "Video",
+      "title": "Crafted with Care, Empowering Every Bite",
+      "subtitle": "More than a machinery manufacturer — a trusted partner on your entrepreneurial journey",
+      "playLabel": "Play Dalian Food Machine promotional video"
+    },
     "hero": {
       "slides": [
         {

@@ -2,6 +2,12 @@
   "Home": {
     "title": "大連食品機械",
     "subtitle": "專業食品機械製造商",
+    "promoVideo": {
+      "badge": "影片介紹",
+      "title": "用心製造，陪你成就每一口美味",
+      "subtitle": "不只是機械製造商，更是陪伴你創業路上的可靠夥伴",
+      "playLabel": "播放大連食品機械宣傳影片"
+    },
     "hero": {
       "slides": [
         {
