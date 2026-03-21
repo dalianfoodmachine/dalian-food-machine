@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import { useTranslations } from "next-intl";
 import HeroSlide from "./HeroSlide";
 
@@ -65,6 +66,7 @@ export default function HeroCarousel() {
       stopOnInteraction: false,
       playOnInit: false,
     }),
+    WheelGesturesPlugin(),
   ]);
 
   const onSelect = useCallback(() => {
