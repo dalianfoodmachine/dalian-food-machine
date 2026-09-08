@@ -36,6 +36,11 @@ jobs:
           pnpm install --frozen-lockfile
         working-directory: dalian-food-machine
 
+      - name: Audit dependencies
+        run: pnpm audit --audit-level=high
+        working-directory: dalian-food-machine
+        continue-on-error: true
+
       - name: Build
         run: pnpm exec opennextjs-cloudflare build
         working-directory: dalian-food-machine
