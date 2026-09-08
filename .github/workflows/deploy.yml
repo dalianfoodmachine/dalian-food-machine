@@ -48,6 +48,10 @@ jobs:
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
 
+      - name: Test Cloudflare Worker routes
+        run: pnpm test:cloudflare
+        working-directory: dalian-food-machine
+
       # Production deploy (push to main only)
       - name: Deploy to Production
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'

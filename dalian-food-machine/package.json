@@ -13,6 +13,7 @@
     "test:e2e": "playwright test",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf:build": "opennextjs-cloudflare build",
+    "test:cloudflare": "playwright test --config playwright.cloudflare.config.ts",
     "cf:deploy": "opennextjs-cloudflare deploy",
     "cf:preview": "opennextjs-cloudflare preview"
   },
