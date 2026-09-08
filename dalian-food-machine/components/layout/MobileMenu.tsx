@@ -7,15 +7,13 @@ import { NAV_ITEMS, SHOP_LINKS } from "@/lib/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function MobileMenu() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openPath, setOpenPath] = useState<string | null>(null);
   const t = useTranslations("Header");
   const tNav = useTranslations("Navigation");
   const pathname = usePathname();
 
-  // 路由變化時關閉選單
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+  const isOpen = openPath === pathname;
+  const setIsOpen = (open: boolean) => setOpenPath(open ? pathname : null);
 
   // 選單開啟時鎖定 body scroll
   useEffect(() => {
@@ -140,7 +138,10 @@ export default function MobileMenu() {
                 rel="noopener noreferrer"
                 className="block w-full text-center px-4 py-2.5 bg-secondary text-gray-900 font-medium rounded-md hover:bg-secondary-light transition-colors"
               >
-                {t(`shop${link.key[0].toUpperCase()}${link.key.slice(1)}` as "shopCyberbiz" | "shopCoupang")}
+                {t(
+                  `shop${link.key[0].toUpperCase()}${link.key.slice(1)}` as
+                    "shopCyberbiz" | "shopCoupang",
+                )}
               </a>
             ))}
           </div>
