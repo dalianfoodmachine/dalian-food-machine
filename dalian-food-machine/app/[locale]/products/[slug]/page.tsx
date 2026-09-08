@@ -7,9 +7,11 @@ import EquipmentExplorer from "@/components/website/EquipmentExplorer";
 import ProductCard from "@/components/website/ProductCard";
 import Icon from "@/components/website/Icon";
 type Props = { params: Promise<{ locale: string; slug: string }> };
-export function generateStaticParams() {
-  return products.map((p) => ({ slug: p.slug }));
-}
+
+// next-intl reads the request locale from headers in the shared layout.
+// Keep this route dynamic so OpenNext never attempts static fallback rendering.
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const p = products.find((p) => p.slug === slug);
