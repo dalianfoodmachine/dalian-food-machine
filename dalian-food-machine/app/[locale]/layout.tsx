@@ -32,8 +32,24 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "大連食品機械",
-  description: "專業食品機械製造商 — 切割機、包裝機、烘焙設備",
+  metadataBase: new URL("https://dalianfoodmachine.com"),
+  title: {
+    default: "大連食品機械 · 台灣製造與試機服務",
+    template: "%s | 大連食品 DALIAN",
+  },
+  description:
+    "大連食品在台灣製造食品機械，提供桌上型水餃機、雲吞機、鍋貼機，以及實機試做、操作保養與維修諮詢。",
+  openGraph: {
+    type: "website",
+    siteName: "大連食品機械 DALIAN",
+    images: [
+      {
+        url: "/media/hero-poster.webp",
+        alt: "大連食品機械 · 台灣製造與試機服務",
+      },
+    ],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default async function LocaleLayout({

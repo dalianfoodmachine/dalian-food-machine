@@ -1675,6 +1675,20 @@ summary {
 details p {
   margin: 18px 0 0;
 }
+.not-found {
+  text-align: center;
+  padding: 120px 20px;
+}
+.not-found h1 {
+  font-size: 80px;
+  margin-bottom: 5px;
+}
+.not-found h2 {
+  font-size: 28px;
+}
+.not-found p {
+  color: var(--muted);
+}
 @media (min-width: 1500px) {
   .container {
     width: min(1320px, calc(100% - 140px));
