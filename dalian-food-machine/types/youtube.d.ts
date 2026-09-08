@@ -9,6 +9,7 @@ declare namespace YT {
       onReady?: (event: PlayerEvent) => void;
       onStateChange?: (event: OnStateChangeEvent) => void;
       onError?: (event: PlayerEvent) => void;
+      onAutoplayBlocked?: (event: PlayerEvent) => void;
     };
   }
 
@@ -29,6 +30,8 @@ declare namespace YT {
     mute(): void;
     unMute(): void;
     isMuted(): boolean;
+    getVolume(): number;
+    setVolume(volume: number): void;
     destroy(): void;
     getPlayerState(): number;
   }
